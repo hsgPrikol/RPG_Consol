@@ -7,6 +7,7 @@ void Fight::fight()
 	Mag* mag = new Mag(10, 7, "Roma", "T");
 	log.createPerson(mag);
 	
+
 	knight->lossHealth(mag->useULT());
 	log.ult(knight->useULT(), mag);
 }
