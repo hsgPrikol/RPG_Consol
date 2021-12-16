@@ -1,36 +1,36 @@
-#include "Knight.h"
+#include "Elf.h"
 
-std::string Knight::getClassPerson()
+std::string Elf::getClassPerson()
 {
     return this->classPerson;
 }
 
-int Knight::getHealthPoint()
+int Elf::getHealthPoint()
 {
     return this->healthPoint;
 }
 
-int Knight::getPower()
+int Elf::getPower()
 {
     return this->power;
 }
 
-std::string Knight::getFirstName()
+std::string Elf::getFirstName()
 {
     return this->firstName;
 }
 
-std::string Knight::getSecondName()
+std::string Elf::getSecondName()
 {
     return this->secondName;
 }
 
-void Knight::lossHealth(int healthPoint)
+void Elf::lossHealth(int healthPoint)
 {
     this->healthPoint = this->healthPoint - healthPoint;
 }
 
-int Knight::useULT()
+int Elf::useULT()
 {
     return 12;
 }

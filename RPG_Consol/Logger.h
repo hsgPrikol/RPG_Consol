@@ -12,5 +12,7 @@ public:
 	void ult(int hit, Hero *hero);
 
 	void createPerson(Hero *hero);
+
+	void enterCountsPersons();
 };
 

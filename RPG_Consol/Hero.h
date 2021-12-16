@@ -6,14 +6,14 @@ class Hero
 private: 
 		
 public: 
-	virtual void lossHealth(int healthPoint) = 0;
+	virtual void lossHealth(int healthPoint);
 	
-	virtual int useULT() = 0;
+	virtual int useULT();
 
-
-	virtual int getHealthPoint() = 0;
-	virtual int getPower() = 0;
-	virtual std::string getFirstName() = 0;
-	virtual std::string getSecondName() = 0;
+	virtual std::string getClassPerson();
+	virtual int getHealthPoint() ;
+	virtual int getPower();
+	virtual std::string getFirstName();
+	virtual std::string getSecondName();
 };
 

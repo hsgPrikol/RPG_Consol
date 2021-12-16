@@ -7,6 +7,11 @@
 int main()
 {
     Fight fight;
+    fight.setCountPersons();
+
+    fight.createPerson();
+    fight.formationTeams();
+
     fight.fight();
 }
 

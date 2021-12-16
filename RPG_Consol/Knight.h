@@ -5,8 +5,9 @@
 class Knight : public Hero
 {
 public:
-	Knight(int healthPoint, int power, std::string firstName, std::string secondName) 
+	Knight(std::string classPerson, int healthPoint, int power, std::string firstName, std::string secondName)
 	{
+		this->classPerson = classPerson;
 		this->healthPoint = healthPoint;
 		this->power = power;
 		this->firstName = firstName;
@@ -15,6 +16,7 @@ public:
 		
 	}
 private:
+	std::string classPerson;
 	int healthPoint;
 	int power;
 	std::string firstName;
@@ -22,6 +24,7 @@ private:
 
 
 public:
+	std::string getClassPerson();
 	int getHealthPoint();
 	int getPower();
 	std::string getFirstName();

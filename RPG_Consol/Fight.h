@@ -4,17 +4,31 @@
 #include "Logger.h"
 #include "Knight.h"
 #include "Mag.h"
+#include "Elf.h"
+#include <time.h>
+#include <vector>
 
 class Fight
 {
 private:
-	Hero *hero;
-	Hero *hero1;
 	Logger log;
-
+	int countPersons = 0;
+	std::vector<Hero*> arrayHeroes;
+	
 public:
 
+	void test(int value);
+
+	void setCountPersons();
+
 	void fight();
+
+	void changeClassPerson(int value);
+
+	void createPerson();
 	
+	void formationTeams();
+
+	int getRandom(int min, int max);
 };
 

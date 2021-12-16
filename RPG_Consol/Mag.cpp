@@ -1,5 +1,10 @@
 #include "Mag.h"
 
+std::string Mag::getClassPerson()
+{
+    return this->classPerson;
+}
+
 int Mag::getHealthPoint()
 {
     return this->healthPoint;

@@ -2,10 +2,10 @@
 #include "Hero.h"
 #include "Logger.h"
 
-class Mag : public Hero
+class Elf : public Hero
 {
 public:
-	Mag(std::string classPerson, int healthPoint, int power, std::string firstName, std::string secondName)
+	Elf(std::string classPerson, int healthPoint, int power, std::string firstName, std::string secondName)
 	{
 		this->classPerson = classPerson;
 		this->healthPoint = healthPoint;
@@ -13,6 +13,7 @@ public:
 		this->firstName = firstName;
 		this->secondName = secondName;
 		Logger log;
+
 	}
 private:
 	std::string classPerson;
@@ -29,8 +30,9 @@ public:
 	std::string getFirstName();
 	std::string getSecondName();
 
+
 	void lossHealth(int healthPoint);
 	int useULT();
 
-
 };
+
